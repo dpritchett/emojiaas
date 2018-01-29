@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "main": "app.js",
   "license": "MIT",
+  "scripts": { "test": "jest" },
   "dependencies": {
     "node-emoji": "^1.8.1",
     "twemoji": "^2.5.0"
   },
   "devDependencies": {
+    "jest": "^22.1.4",
     "prettier": "^1.10.2"
   }
 }
