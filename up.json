@@ -1,0 +1,15 @@
+{
+  "name": "emoji-service-5",
+  "profile": "default",
+  "regions": [
+    "us-east-2"
+  ],
+  "stages": {
+    "development": {
+      "domain": "emoji-dev2.pritchettbots.com"
+    },
+    "production": {
+      "domain": "emoji.pritchettbots.com"
+    }
+  }
+}
