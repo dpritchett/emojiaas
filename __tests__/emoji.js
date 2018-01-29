@@ -6,9 +6,8 @@ describe("emoji parsing library", () => {
     expect(emoji.nameToUnicode("robot_face")).toEqual("🤖");
   });
 
-  
-  test("parse name returns unicode match for name", () => {
-    const result = emoji.findByName("poop");
+  test("imageUrlFromName", () => {
+    const result = emoji.imageUrlFromName("poop");
 
     expect(result).toEqual("https://twemoji.maxcdn.com/36x36/1f4a9.png");
   });

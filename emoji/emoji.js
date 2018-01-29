@@ -10,7 +10,7 @@ const nameToUnicode = name => {
   return emoji.emojify(`:${name}:`);
 };
 
-const findByName = name => {
+const imageUrlFromName = name => {
   const asUnicode = nameToUnicode(name);
 
   const result = twemoji.parse(asUnicode, { callback: parseCb });
@@ -20,6 +20,6 @@ const findByName = name => {
 };
 
 module.exports = {
-  findByName: findByName,
+  imageUrlFromName: imageUrlFromName,
   nameToUnicode: nameToUnicode
 };

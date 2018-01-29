@@ -10,9 +10,11 @@ http
     route = url.parse(`http://${req.url}`).pathname;
 
     if (route.match(/\/named\/\w+/)) {
-      const name = route.split("/named/")[1];
+      const longName = route.split("/named/")[1];
 
-      res.end(`<html><body>${handleNamed(name)}</body></html>`);
+      const imageUrl = emoji.imageUrlFromName(longName);
+
+      res.end(`<html><body><img src="${imageUrl}"/></body></html>`);
     } else {
       res.end(`Hello World from Node.js at ${route}\n`);
     }
